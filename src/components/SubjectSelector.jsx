@@ -1,4 +1,4 @@
-export default function SubjectSelector({ subjects, onSelect }) {
+export default function SubjectSelector({ subjects, onSelect, onEdit }) {
   return (
     <div className="subject-selector">
       <div className="selector-hero">
@@ -15,19 +15,28 @@ export default function SubjectSelector({ subjects, onSelect }) {
           >
             <div className="subject-card-header">
               <span className="subject-emoji">{subject.emoji}</span>
-              <h3 className="subject-name">{subject.subject}</h3>
+              <div className="subject-title-row">
+                <h3 className="subject-name">{subject.subject}</h3>
+                <button
+                  className="btn-edit-inline"
+                  onClick={() => onEdit(subject)}
+                  title="Edit questions"
+                >✏</button>
+              </div>
               <span className="subject-count">{subject.questions.length} questions</span>
             </div>
             <div className="subject-card-actions">
               <button
                 className="btn btn-study"
                 onClick={() => onSelect(subject, 'study')}
+                disabled={subject.questions.length === 0}
               >
                 📖 Study
               </button>
               <button
                 className="btn btn-quiz"
                 onClick={() => onSelect(subject, 'quiz')}
+                disabled={subject.questions.length === 0}
               >
                 🎯 Quiz me
               </button>

@@ -48,6 +48,11 @@ export default function App() {
     setSubjects(updated)
   }
 
+  function handleEditSubject(subject) {
+    setSelectedSubject(subject)
+    setScreen('manage')
+  }
+
   return (
     <div className="app">
       <header className="app-header">
@@ -63,7 +68,7 @@ export default function App() {
             {screen === 'home' && (
               <button
                 className="btn btn-ghost"
-                onClick={() => setScreen('manage')}
+                onClick={() => { setSelectedSubject(null); setScreen('manage') }}
                 title="Manage subjects"
               >
                 ⚙ Manage
@@ -75,7 +80,7 @@ export default function App() {
 
       <main className="app-main">
         {screen === 'home' && (
-          <SubjectSelector subjects={subjects} onSelect={handleSelectSubject} />
+          <SubjectSelector subjects={subjects} onSelect={handleSelectSubject} onEdit={handleEditSubject} />
         )}
         {screen === 'study' && selectedSubject && (
           <FlashcardMode subject={selectedSubject} onBack={handleBack} />
@@ -88,7 +93,8 @@ export default function App() {
             subjects={subjects}
             builtinIds={builtinSubjects.map(s => s.id)}
             onSave={handleSaveSubjects}
-            onBack={() => setScreen('home')}
+            onBack={() => { setSelectedSubject(null); setScreen('home') }}
+            initialEdit={selectedSubject}
           />
         )}
       </main>

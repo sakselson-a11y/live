@@ -109,8 +109,15 @@ body {
   gap: 0.3rem;
 }
 .subject-emoji { font-size: 2rem; line-height: 1; }
-.subject-name  { font-size: 1.1rem; font-weight: 700; }
+.subject-title-row { display: flex; align-items: center; gap: 0.4rem; }
+.subject-name  { font-size: 1.1rem; font-weight: 700; flex: 1; }
 .subject-count { font-size: 0.82rem; color: var(--text-muted); }
+.btn-edit-inline {
+  background: none; border: none; cursor: pointer; font-size: 0.9rem;
+  color: var(--text-muted); padding: 0.1rem 0.3rem; border-radius: 4px;
+  opacity: 0.5; transition: opacity 0.15s;
+}
+.btn-edit-inline:hover { opacity: 1; background: var(--bg); }
 
 .subject-card-actions {
   display: flex;
@@ -339,6 +346,7 @@ body {
 .manage-item-actions { display: flex; gap: 0.4rem; }
 
 /* ── Edit form ── */
+.edit-row { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 .edit-field {
   display: flex;
   flex-direction: column;
@@ -346,6 +354,26 @@ body {
   margin-bottom: 1.25rem;
 }
 .edit-field label { font-weight: 600; font-size: 0.9rem; }
+
+.questions-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+.entry-tabs { display: flex; border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; }
+.entry-tab {
+  padding: 0.35rem 0.8rem; font-size: 0.82rem; font-weight: 600;
+  border: none; background: none; cursor: pointer; color: var(--text-muted);
+  transition: background 0.15s, color 0.15s;
+}
+.entry-tab.active { background: var(--accent); color: #fff; }
+
+.q-num { font-size: 0.75rem; color: var(--text-muted); font-weight: 700; min-width: 1.2rem; padding-top: 0.1rem; }
+
+.bulk-entry { display: flex; flex-direction: column; gap: 0.6rem; }
+.bulk-help { font-size: 0.88rem; color: var(--text-muted); }
+.bulk-example {
+  font-size: 0.8rem; background: var(--bg); border-radius: 6px;
+  padding: 0.6rem 0.75rem; color: var(--text-muted); white-space: pre-wrap;
+}
+.bulk-errors { display: flex; flex-direction: column; gap: 0.2rem; }
+.bulk-preview { font-size: 0.88rem; color: #16a34a; font-weight: 600; }
 .text-input {
   padding: 0.6rem 0.9rem;
   border: 1.5px solid var(--border);
