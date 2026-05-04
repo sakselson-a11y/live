@@ -1,0 +1,18 @@
+{
+  "id": "science",
+  "subject": "Science",
+  "emoji": "🔬",
+  "color": "#2ecc71",
+  "questions": [
+    { "q": "What are the three states of matter?", "a": "Solid, Liquid, Gas" },
+    { "q": "What is photosynthesis?", "a": "The process plants use to convert sunlight, water, and CO₂ into glucose and oxygen" },
+    { "q": "What planet is closest to the Sun?", "a": "Mercury" },
+    { "q": "What is the chemical symbol for water?", "a": "H₂O" },
+    { "q": "What force pulls objects toward Earth?", "a": "Gravity" },
+    { "q": "What are the tiny building blocks of matter called?", "a": "Atoms" },
+    { "q": "What is the powerhouse of the cell?", "a": "The mitochondria" },
+    { "q": "How many bones are in the adult human body?", "a": "206" },
+    { "q": "What gas do plants absorb from the air?", "a": "Carbon dioxide (CO₂)" },
+    { "q": "What is the speed of light (approximately)?", "a": "300,000 km/s (186,000 miles per second)" }
+  ]
+}

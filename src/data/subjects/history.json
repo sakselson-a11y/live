@@ -1,0 +1,18 @@
+{
+  "id": "history",
+  "subject": "History",
+  "emoji": "📜",
+  "color": "#e67e22",
+  "questions": [
+    { "q": "In what year did World War II end?", "a": "1945" },
+    { "q": "Who was the first President of the United States?", "a": "George Washington" },
+    { "q": "What ancient wonder was located in Egypt?", "a": "The Great Pyramid of Giza" },
+    { "q": "Who wrote the Declaration of Independence?", "a": "Thomas Jefferson (primary author)" },
+    { "q": "In what year did the Berlin Wall fall?", "a": "1989" },
+    { "q": "What empire did Julius Caesar lead?", "a": "The Roman Empire" },
+    { "q": "Who was the first person to walk on the Moon?", "a": "Neil Armstrong (1969)" },
+    { "q": "What was the name of the ship that sank in 1912?", "a": "The Titanic" },
+    { "q": "Which country did the United States buy Louisiana from?", "a": "France" },
+    { "q": "What war ended with the Treaty of Versailles?", "a": "World War I" }
+  ]
+}

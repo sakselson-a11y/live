@@ -1,0 +1,18 @@
+{
+  "id": "english",
+  "subject": "English",
+  "emoji": "📖",
+  "color": "#9b59b6",
+  "questions": [
+    { "q": "What is a noun?", "a": "A word that names a person, place, thing, or idea" },
+    { "q": "What is a verb?", "a": "A word that describes an action, state, or occurrence" },
+    { "q": "What is an adjective?", "a": "A word that describes or modifies a noun" },
+    { "q": "What is an adverb?", "a": "A word that modifies a verb, adjective, or another adverb (often ends in -ly)" },
+    { "q": "What is a simile?", "a": "A comparison using 'like' or 'as' (e.g. 'fast as lightning')" },
+    { "q": "What is a metaphor?", "a": "A direct comparison saying something IS something else (e.g. 'life is a journey')" },
+    { "q": "What is alliteration?", "a": "The repetition of the same starting sound in nearby words" },
+    { "q": "What is a synonym?", "a": "A word that means the same (or similar) as another word" },
+    { "q": "What is an antonym?", "a": "A word that means the opposite of another word" },
+    { "q": "What punctuation ends a question?", "a": "A question mark (?)" }
+  ]
+}

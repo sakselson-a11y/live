@@ -1,0 +1,18 @@
+{
+  "id": "math",
+  "subject": "Mathematics",
+  "emoji": "🔢",
+  "color": "#4f86f7",
+  "questions": [
+    { "q": "What is 7 × 8?", "a": "56" },
+    { "q": "What is 144 ÷ 12?", "a": "12" },
+    { "q": "What is 25% of 80?", "a": "20" },
+    { "q": "What is the square root of 81?", "a": "9" },
+    { "q": "What is 3² + 4²?", "a": "25" },
+    { "q": "What are the factors of 12?", "a": "1, 2, 3, 4, 6, 12" },
+    { "q": "What is a prime number?", "a": "A number greater than 1 that has no divisors other than 1 and itself" },
+    { "q": "What is the perimeter of a rectangle 5cm × 3cm?", "a": "16cm" },
+    { "q": "What is the area of a triangle with base 6 and height 4?", "a": "12 (½ × base × height)" },
+    { "q": "What is 0.75 as a fraction?", "a": "3/4" }
+  ]
+}
